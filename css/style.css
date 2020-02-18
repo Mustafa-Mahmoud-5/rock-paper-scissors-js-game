@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+#rock,#paper,#scissors{
+    font-size: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+}
+#rock:hover,#paper:hover,#scissors:hover{
+
+    color: #17A2B8;
+}
+
+#popperParent{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0,.5);
+
+
+
+
+
+    display: none;
+}
+
+#popperContent{
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgb(46, 46, 46);
+    padding: 10px;
+    animation: show .4s ease-in-out;
+}
+
+/* make the animation by which the popper gonna get showed */
+@keyframes show{
+
+    from{
+        opacity: 0;
+        top: 30%;
+    }
+    to{
+        opacity: 1;
+        top: 25%;
+    }
+}
+
+
+/* minimize the icons on small screens */
+@media only screen and (max-width: 800px) {
+    #rock,#paper,#scissors{
+        font-size: 150px;
+    }
+    
+      }
+  
+      @media only screen and (max-width: 670px) {
+        #rock,#paper,#scissors{
+            font-size: 90px !important;
+        }
+        
+          }
+      

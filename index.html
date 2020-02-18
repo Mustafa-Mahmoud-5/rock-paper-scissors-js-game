@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    
+    <div class="container mt-5 text-center">
+        <h1 class="text-center">Rock Paper Scissors</h1>
+
+        <div class="btn btn-outline-dark p-2 my-3" id="restart">Restart Game</div>
+
+        <div id="showBoard" class="d-flex">
+            <p id="playerScore" class="w-50 border bg-info py-2 text-white">Player: 0</p>
+            <p id="computerScore" class="w-50 border bg-dark text-white py-2">Computer: 0</p>
+        </div>
+
+        <h2 class="my-2">Make Your Selection</h2>
+
+        <div class="rockPackerScissors d-flex justify-content-between mx-auto my-5">
+            <i class="fas fa-hand-rock icon" id="rock"></i>
+            <i class="fas fa-hand-paper icon" id="paper"></i>
+            <i class="fas fa-hand-scissors icon" id="scissors"></i>
+
+        </div>
+    </div>
+
+    <!-- myPopper -->
+
+    <div id="popperParent">
+        <div id="popperContent">
+            
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
